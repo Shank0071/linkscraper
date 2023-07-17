@@ -3,7 +3,6 @@ import axios from "axios";
 import { NextResponse } from "next/server";
 
 export const GET = async (req, {params}) => {
-  console.log("q", params)
   const { q } = params
   async function getData() {
     const { data } = await axios.get(

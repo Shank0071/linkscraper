@@ -5,7 +5,10 @@ import { useState, CSSProperties } from "react";
 import { ClipLoader } from "react-spinners";
 
 async function getData(q) {
-  const data = await axios.get(`http://localhost:3000/api/data/${q}`);
+  // const data = await axios.get(`http://localhost:3000/api/data/${q}`);
+  const data = await axios.get(`/api/data/${q}`);
+  
+
   return data.data.data;
 }
 
